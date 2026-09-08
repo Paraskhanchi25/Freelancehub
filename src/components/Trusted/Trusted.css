@@ -1,0 +1,34 @@
+.trusted {
+  padding: 55px 5%;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.trusted  p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.trusted-list {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.trusted-list span {
+  font-size: 23px;
+  font-weight: bold;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .trusted-list {
+    gap: 25px;
+  }
+
+  .trusted-list span {
+    font-size: 18px;
+  }
+}

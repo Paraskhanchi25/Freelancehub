@@ -1,0 +1,3 @@
+/* FreelancerDashboard reuses the shared dashboard layout from ClientDashboard.css */
+/* Import the shared styles */
+@import "../ClientDashboard/ClientDashboard.css";

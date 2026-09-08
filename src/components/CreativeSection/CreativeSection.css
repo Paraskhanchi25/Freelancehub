@@ -1,0 +1,92 @@
+.creative {
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.creative-text {
+  width: 40%;
+}
+
+.creative-text > p:first-child {
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.creative-text h2 {
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.creative-text a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #111;
+  color: white;
+  border-radius: 25px;
+}
+
+.skill-stack {
+  width: 50%;
+  height: 400px;
+  position: relative;
+}
+
+.skill-card {
+  position: absolute;
+  width: 80%;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px #ccc;
+}
+
+.skill-card h3 {
+  margin: 10px 0;
+}
+
+.skill-card p {
+  color: #555;
+}
+
+.card-one {
+  top: 0;
+  left: 0;
+  background: #dcecff;
+}
+
+.card-two {
+  top: 85px;
+  right: 0;
+  background: #e8ddff;
+}
+
+.card-three {
+  top: 170px;
+  left: 0;
+  background: #ffe4c2;
+}
+
+.card-four {
+  top: 255px;
+  right: 0;
+  background: #e2f4dd;
+}
+
+@media (max-width: 700px) {
+  .creative {
+    flex-direction: column;
+    padding: 60px 5%;
+  }
+
+  .creative-text,
+  .skill-stack {
+    width: 100%;
+  }
+
+  .creative-text h2 {
+    font-size: 38px;
+  }
+}

@@ -1,0 +1,50 @@
+.sponsored {
+  padding: 80px 5%;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.small-title {
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.sponsored h2 {
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.sponsored h1 {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+.college-text {
+  max-width: 600px;
+  margin: auto;
+  color: #666;
+  line-height: 1.6;
+}
+
+.sponsored a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 22px;
+  background: #111;
+  color: white;
+  border-radius: 25px;
+}
+
+.sponsored a:hover {
+  background: #ff6b00;
+}
+
+@media (max-width: 600px) {
+  .sponsored h1 {
+    font-size: 32px;
+  }
+
+  .sponsored h2 {
+    font-size: 24px;
+  }
+}

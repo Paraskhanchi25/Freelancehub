@@ -1,0 +1,65 @@
+.freelancer-card {
+  background: white;
+  padding: 12px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #ddd;
+  transition: 0.3s;
+}
+
+.freelancer-card:hover {
+  transform: translateY(-5px);
+}
+
+.freelancer-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.freelancer-card h3 {
+  margin: 12px 5px 5px;
+}
+
+.role {
+  color: #777;
+  margin: 0 5px;
+}
+
+.description {
+  color: #666;
+  font-size: 13px;
+  margin: 12px 5px;
+  line-height: 1.4;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 15px 5px;
+}
+
+.stats div {
+  font-weight: bold;
+}
+
+.stats small {
+  display: block;
+  color: #888;
+  font-weight: normal;
+  margin-top: 4px;
+}
+
+.contact {
+  display: block;
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 11px;
+  border-radius: 25px;
+}
+
+.contact:hover {
+  background: #ff6b00;
+}

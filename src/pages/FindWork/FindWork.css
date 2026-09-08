@@ -1,0 +1,32 @@
+.find-work {
+  padding: 70px 5%;
+  min-height: 600px;
+  background: #f7f7f7;
+}
+
+.find-work h1 {
+  font-size: 45px;
+}
+
+.find-work > p {
+  color: #777;
+  margin: 10px 0 40px;
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 800px) {
+  .jobs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .jobs {
+    grid-template-columns: 1fr;
+  }
+}

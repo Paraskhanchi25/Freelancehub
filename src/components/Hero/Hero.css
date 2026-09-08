@@ -1,0 +1,95 @@
+.hero {
+  width: 95%;
+  min-height: 600px;
+  margin: 20px auto;
+  border-radius: 25px;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: white;
+}
+
+.hero-content {
+  width: 90%;
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 35px;
+}
+
+.search-box {
+  display: flex;
+  background: white;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+.search-box button {
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background: #ff6b00;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.hero-buttons a {
+  color: white;
+  border: 1px solid white;
+  padding: 9px 16px;
+  border-radius: 25px;
+}
+
+.hero-buttons a:hover {
+  background: white;
+  color: black;
+}
+
+.hero p {
+  margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 550px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-buttons a {
+    font-size: 13px;
+  }
+}

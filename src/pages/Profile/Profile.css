@@ -1,0 +1,40 @@
+.profile {
+  min-height: 600px;
+  padding: 70px 5%;
+  background: #f7f7f7;
+}
+
+.profile-card {
+  max-width: 600px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px #ddd;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile-card h1 {
+  margin: 15px 0 5px;
+}
+
+.profile-card p {
+  color: #666;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.profile-card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #ff6b00;
+  color: white;
+  border-radius: 25px;
+}

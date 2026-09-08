@@ -1,0 +1,27 @@
+.job-details {
+  min-height: 600px;
+  padding: 80px 8%;
+}
+
+.job-details h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.job-details p {
+  color: #666;
+  margin: 15px 0;
+}
+
+.job-details h2 {
+  margin: 25px 0;
+}
+
+.job-details a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #ff6b00;
+  color: white;
+  border-radius: 25px;
+}
