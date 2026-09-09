@@ -11,7 +11,7 @@
 }
 
 .creative-text > p:first-child {
-  color: #ff6b00;
+  color: #69e73f;
   font-weight: bold;
 }
 
@@ -37,42 +37,66 @@
 
 .skill-card {
   position: absolute;
-  width: 80%;
+  width: 75%;
   padding: 25px;
   border-radius: 18px;
   box-shadow: 0 8px 20px #ccc;
+  transition:
+  transform 0.4s cubic-bezier(0.22,1,0.36,1),
+  opactiy 0.45s ease,
+  box-shadow 0.55s cubic-bezier(0.22,1,0.36,1);
+  z-index: 1;
+  will-change: transform,opacity;
+  box-sizing: border-box;
+}
+.skill-card:hover {
+transform: translateY(-18px) scale(1.03);
+  z-index: 20 !important; /* Forces the hovered card above all others */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+
+}
+.skill-stack:has(.skill-card:hover) .skill-card:not(:hover) {
+  opacity: 0.45;
+  transform: scale(0.98);
 }
 
+
 .skill-card h3 {
-  margin: 10px 0;
+  margin: 10px 0 5px;
 }
 
 .skill-card p {
   color: #555;
+  margin: 0;
 }
 
 .card-one {
   top: 0;
   left: 0;
   background: #dcecff;
+  z-index:1;
 }
 
 .card-two {
   top: 85px;
   right: 0;
   background: #e8ddff;
+  z-index: 2;
 }
 
 .card-three {
   top: 170px;
   left: 0;
   background: #ffe4c2;
+  z-index: 3;
 }
 
 .card-four {
   top: 255px;
   right: 0;
   background: #e2f4dd;
+  z-index: 4;
 }
 
 @media (max-width: 700px) {
