@@ -8,23 +8,23 @@ function FindTalent() {
 
   const people = [
     {
-      name: "Arvind ",
+      name: "Paras Khanchi",
       role: "UI/UX Designer",
       description: "Modern and user-friendly designs.",
       rating: "4.9",
       earned: "₹85K",
       rate: "900",
-      image: "https://i.pravatar.cc/400?img=12"
+      image: "./src/assets/Myself.jpeg"
     },
 
     {
-      name: "Pawan",
+      name: "Himakshi",
       role: "Full Stack Developer",
       description: "Fast and scalable web applications.",
       rating: "4.8",
       earned: "₹1.2L",
       rate: "1200",
-      image: "https://i.pravatar.cc/400?img=47"
+      image: "./src/assets/Somyaa.jpeg"
     }
   ];
 
