@@ -16,7 +16,7 @@ const talentPool = [
     rate: "₹900/hr",
     distanceKm: 3,
     availability: "Available now",
-    image: "https://i.pravatar.cc/150?img=12",
+    image: "./src/assets/Somyaa.jpeg",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const talentPool = [
     rate: "₹1200/hr",
     distanceKm: 8,
     availability: "Available now",
-    image: "https://i.pravatar.cc/150?img=47",
+    image: "./src/assets/Myself.jpeg",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const talentPool = [
     rate: "₹700/hr",
     distanceKm: 12,
     availability: "Busy till Fri",
-    image: "https://i.pravatar.cc/150?img=33",
+    image: "./src/assets/Tushar.jpeg",
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const talentPool = [
     rate: "₹600/hr",
     distanceKm: 5,
     availability: "Available now",
-    image: "https://i.pravatar.cc/150?img=44",
+    image: "./src/assets/somya.jpeg",
   },
   {
     id: 5,
@@ -68,7 +68,7 @@ const talentPool = [
     rate: "₹950/hr",
     distanceKm: 15,
     availability: "Available now",
-    image: "https://i.pravatar.cc/150?img=15",
+    image: "./src/assets/Varij.jpeg",
   },
   {
     id: 6,
@@ -81,11 +81,11 @@ const talentPool = [
     rate: "₹650/hr",
     distanceKm: 20,
     availability: "Busy till Mon",
-    image: "https://i.pravatar.cc/150?img=25",
+    image: "./src/assets/AshutoshV.jpeg",
   },
   {
     id: 7,
-    name: "Sanchit Sigla",
+    name: "Sanchit Singla",
     primarySkill: "JavaScript Developer",
     skills: ["JavaScript", "Node.js", "React", "APIs"],
     rating: 4.9,
@@ -94,11 +94,11 @@ const talentPool = [
     rate: "₹1400/hr",
     distanceKm: 9,
     availability: "Available now",
-    image: "https://i.pravatar.cc/150?img=51",
+    image: "./src/assets/Sanchit.jpeg",
   },
   {
     id: 8,
-    name: "Amay Singh",
+    name: "Alex Dunphy",
     primarySkill: "Digital Marketer",
     skills: ["SEO", "Meta Ads", "Google Ads", "Analytics"],
     rating: 4.7,
