@@ -14,7 +14,7 @@ function Footer() {
       <div className="footer-top">
 
         <div className="footer-brand">
-          <h2>WorkHub</h2>
+          <h2>DevLance</h2>
 
           <p>Work. Connect. Grow.</p>
 
