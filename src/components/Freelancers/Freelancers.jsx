@@ -37,7 +37,7 @@ function Freelancers() {
       rating: "4.9",
       earned: "₹72K",
       rate: "700",
-      image: "https://i.pravatar.cc/400?img=33"
+      image: "./src/assets/Somyaa.jpeg"
     },
 
     {

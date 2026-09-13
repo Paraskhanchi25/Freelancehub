@@ -61,10 +61,10 @@ function ClientDashboard() {
         <aside className="dashboard-sidebar">
           <div className="sidebar-profile">
             <img
-              src="https://randomuser.me/api/portraits/men/75.jpg"
+              src="./src/assets/Somyaa.jpeg"
               alt="Client"
             />
-            <h3>Rahul Verma</h3>
+            <h3>Himakshi</h3>
             <p>Client Account</p>
           </div>
 
@@ -105,7 +105,7 @@ function ClientDashboard() {
 
           {activeTab === "overview" && (
             <div>
-              <h1>Welcome back, Rahul 👋</h1>
+              <h1>Welcome back, Himakshi</h1>
               <p className="dash-subtitle">Here&apos;s what&apos;s happening with your projects.</p>
 
               <div className="stats-grid">
