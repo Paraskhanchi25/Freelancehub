@@ -6,9 +6,9 @@ import "./AboutUs.css";
 function AboutUs() {
   const team = [
     {
-      name: "Tushar Mehta",
+      name: "Tushar Bansal",
       role: "Founder & CEO",
-      img: "https://randomuser.me/api/portraits/men/11.jpg",
+      img: "../../src/assets/Tushar.jpeg",
       bio: "Passionate about connecting talent with opportunity.",
     },
     {
