@@ -1,0 +1,246 @@
+.image-upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.image-upload-label-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-upload-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.btn-remove-image {
+  background: none;
+  border: none;
+  color: #e53935;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.btn-remove-image:hover {
+  background: #ffebee;
+}
+
+.image-upload-error {
+  background: #fde8e8;
+  color: #c0392b;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* Empty Dropzone */
+.image-dropzone {
+  border: 2px dashed #d0d7de;
+  border-radius: 12px;
+  padding: 24px 16px;
+  text-align: center;
+  background: #fafbfc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.image-dropzone:hover {
+  border-color: #ff6b00;
+  background: #fff8f3;
+}
+
+.dropzone-icon {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.dropzone-title {
+  font-size: 14px;
+  color: #444;
+  margin: 0 0 4px 0;
+}
+
+.dropzone-title strong {
+  color: #ff6b00;
+}
+
+.dropzone-sub {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}
+
+/* Image Preview */
+.image-preview-card {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e1e4e8;
+}
+
+.image-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-preview-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-preview-tag {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(26, 143, 82, 0.85);
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.btn-change-image {
+  background: white;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 16px;
+  cursor: pointer;
+  color: #222;
+  transition: 0.2s;
+}
+
+.btn-change-image:hover {
+  background: #f0f0f0;
+}
+
+/* Curated presets */
+.image-presets-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.presets-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #777;
+}
+
+.preset-chips-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.preset-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.preset-chip:hover {
+  background: #fff0e6;
+  border-color: #ff6b00;
+  color: #ff6b00;
+}
+
+.preset-chip-active {
+  background: #ff6b00;
+  border-color: #ff6b00;
+  color: white;
+}
+
+.preset-chip-active:hover {
+  background: #e05e00;
+  border-color: #e05e00;
+  color: white;
+}
+
+.preset-icon {
+  font-size: 13px;
+}
+
+/* URL Input row */
+.image-url-toggle-bar {
+  margin-top: 4px;
+}
+
+.btn-toggle-url {
+  background: none;
+  border: none;
+  color: #0066cc;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.image-url-input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.url-input-field {
+  flex: 1;
+  padding: 8px 12px !important;
+  font-size: 13px !important;
+  border-radius: 8px !important;
+}
+
+.btn-apply-url {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-apply-url:hover {
+  background: #000;
+}
+
+.btn-cancel-url {
+  background: none;
+  border: none;
+  color: #777;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px 10px;
+}

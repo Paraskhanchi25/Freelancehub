@@ -1,0 +1,338 @@
+.post-job {
+  min-height: 700px;
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 5%;
+}
+
+.post-job-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.post-job h1 {
+  font-size: 34px;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.post-job-subtitle {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.post-job-ai-helper {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  border: 1px solid #312e81;
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+.ai-helper-text strong {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.ai-helper-text p {
+  font-size: 12.5px;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.btn-ai-helper {
+  background: #ff6b00;
+  color: #ffffff;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.25);
+}
+
+.btn-ai-helper:hover {
+  background: #ea580c;
+  transform: translateY(-1px);
+}
+
+.post-job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.post-job input,
+.post-job textarea,
+.post-job select {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  background: white;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.post-job input:focus,
+.post-job textarea:focus,
+.post-job select:focus {
+  border-color: #ff6b00;
+}
+
+.post-job textarea {
+  height: 140px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.help-text {
+  font-size: 12px;
+  color: #888;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 25px;
+  background: #ff6b00;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background: #e05e00;
+  transform: translateY(-1px);
+}
+
+.btn-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-cancel {
+  color: #777;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.btn-cancel:hover {
+  color: #222;
+}
+
+.error-banner {
+  background: #fde8e8;
+  color: #c0392b;
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.success-banner {
+  background: #e6f9f0;
+  border: 1px solid #c2f3d6;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+.success-banner h3 {
+  color: #1a8f52;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.success-banner p {
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.success-banner code {
+  background: #d4f4e2;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.success-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #ff6b00;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #e05e00;
+}
+
+.btn-secondary {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #f7f7f7;
+}
+
+.btn-text {
+  background: none;
+  border: none;
+  color: #ff6b00;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+/* Targeted Freelancer Hire Mode Card */
+.target-freelancer-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff8f2;
+  border: 1px solid #ffd8bf;
+  border-left: 4px solid #ff6b00;
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.target-badge {
+  background: #ff6b00;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.target-info {
+  margin: 0;
+  font-size: 13.5px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.target-info strong {
+  color: #111;
+}
+
+/* Direct Hire Prompt in Success State */
+.direct-hire-prompt {
+  background: white;
+  border: 1px dashed #22c55e;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.direct-hire-prompt p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.btn-hire-now {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.25);
+}
+
+.btn-hire-now:hover:not(:disabled) {
+  background: #15803d;
+  transform: translateY(-1px);
+}
+
+.btn-hire-now:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.direct-hired-banner {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .post-job-card {
+    padding: 25px 20px;
+  }
+}

@@ -1,15 +1,19 @@
 {
-  "name": "03-folder",
+  "name": "freelancehub",
+  "description": "Modern Freelance Marketplace connecting clients and top freelancers",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "server": "node server.js",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google/genai": "^2.30.0",
+    "jspdf": "^4.2.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.3"

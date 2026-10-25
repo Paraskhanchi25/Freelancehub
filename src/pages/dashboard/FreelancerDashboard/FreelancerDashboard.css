@@ -1,0 +1,84 @@
+/* FreelancerDashboard reuses the shared dashboard layout from ClientDashboard.css */
+/* Import the shared styles */
+@import "../ClientDashboard/ClientDashboard.css";
+
+.sidebar-rate-tag {
+  display: inline-block;
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin: 6px auto;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .sidebar-rate-tag {
+    margin: 4px 0;
+    text-align: left;
+  }
+}
+
+.profile-skills-widget {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 25px;
+}
+
+.profile-skills-widget h3 {
+  font-size: 15px;
+  margin: 0 0 12px 0;
+  color: #0f172a;
+}
+
+.skills-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chip-fl {
+  background: #f1f5f9;
+  color: #334155;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+}
+
+.contracts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contract-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.btn-withdraw {
+  background: none;
+  border: 1px solid #fca5a5;
+  color: #ef4444;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-withdraw:hover {
+  background: #fef2f2;
+}

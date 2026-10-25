@@ -1,0 +1,215 @@
+/* ==========================================================================
+   FREELANCER CARD STYLES
+   Modern visual card with clean avatar, stats bar, and hover lift
+   ========================================================================== */
+
+.freelancer-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.freelancer-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-border);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Media & Image */
+.freelancer-card-media {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: var(--slate-100);
+  overflow: hidden;
+}
+
+.freelancer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.freelancer-card:hover .freelancer-img {
+  transform: scale(1.03);
+}
+
+.freelancer-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--slate-700), var(--slate-900));
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.availability-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+  letter-spacing: 0.02em;
+}
+
+.status-available {
+  background: rgba(16, 185, 129, 0.9);
+  color: var(--white);
+}
+
+.status-busy {
+  background: rgba(245, 158, 11, 0.9);
+  color: var(--white);
+}
+
+/* Body */
+.freelancer-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.freelancer-header {
+  margin-bottom: 8px;
+}
+
+.freelancer-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--slate-900);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.freelancer-name a {
+  color: var(--slate-900);
+  transition: color var(--transition-fast);
+}
+
+.freelancer-name a:hover {
+  color: var(--primary);
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 900;
+}
+
+.freelancer-role {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.freelancer-description {
+  font-size: 0.88rem;
+  color: var(--slate-600);
+  line-height: 1.5;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* Skills */
+.freelancer-skills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.skill-chip {
+  background: var(--slate-100);
+  color: var(--slate-700);
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+}
+
+/* Stats Bar */
+.freelancer-stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 8px;
+  background: var(--slate-50);
+  border: 1px solid var(--slate-100);
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+}
+
+.stat-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-val {
+  font-size: 0.88rem;
+  font-weight: 750;
+  color: var(--slate-800);
+}
+
+.stat-lbl {
+  font-size: 0.68rem;
+  color: var(--slate-400);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--slate-200);
+}
+
+/* Button */
+.btn-freelancer-action {
+  display: block;
+  text-align: center;
+  background: var(--slate-900);
+  color: var(--white);
+  font-size: 0.88rem;
+  font-weight: 650;
+  padding: 11px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  margin-top: auto;
+}
+
+.btn-freelancer-action:hover {
+  background: var(--primary);
+  box-shadow: 0 4px 12px var(--primary-glow);
+  transform: translateY(-1px);
+}

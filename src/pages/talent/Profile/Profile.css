@@ -1,0 +1,405 @@
+/* ==========================================================================
+   TALENT PROFILE PAGE STYLES
+   Two-column profile layout, prominent avatar, sleek hiring sidebar
+   ========================================================================== */
+
+.profile-page {
+  flex: 1;
+  padding: 40px 24px 80px;
+  background-color: #f8fafc;
+}
+
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--slate-500);
+  margin-bottom: 24px;
+  transition: color var(--transition-fast);
+}
+
+.profile-back-link:hover {
+  color: var(--primary);
+}
+
+/* Toast Banner */
+.profile-toast-banner {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 12px 18px;
+  background: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  border-radius: var(--radius-md);
+  color: var(--primary-dark);
+  font-size: 0.92rem;
+  font-weight: 550;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-toast-banner button {
+  font-size: 1rem;
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+
+/* Layout Grid */
+.profile-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 32px;
+  align-items: start;
+}
+
+.profile-main-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Profile Header Card */
+.profile-header-card {
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.profile-avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.profile-avatar-large {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--white);
+  box-shadow: var(--shadow-md);
+}
+
+.profile-avatar-placeholder {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--slate-700), var(--slate-900));
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+.profile-status-indicator {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+}
+
+.status-online {
+  background: var(--success);
+}
+
+.status-offline {
+  background: var(--warning);
+}
+
+.profile-primary-details h1 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--slate-900);
+}
+
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.profile-verified-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border: 1px solid var(--primary-border);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.profile-headline {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+
+.profile-meta-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.meta-pill {
+  font-size: 0.8rem;
+  font-weight: 550;
+  color: var(--slate-600);
+  background: var(--slate-100);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+/* Sections */
+.profile-section-card {
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.profile-section-card h2 {
+  font-size: 1.25rem;
+  font-weight: 750;
+  color: var(--slate-900);
+  margin-bottom: 16px;
+}
+
+.profile-bio-text {
+  font-size: 0.98rem;
+  color: var(--slate-600);
+  line-height: 1.7;
+}
+
+.profile-skills-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.profile-skill-badge {
+  background: var(--slate-100);
+  color: var(--slate-800);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--slate-200);
+}
+
+.profile-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.profile-stat-box {
+  background: var(--slate-50);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-big {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--slate-900);
+}
+
+.stat-sub {
+  font-size: 0.75rem;
+  color: var(--slate-500);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Sidebar Hire Card */
+.profile-sidebar-col {
+  position: sticky;
+  top: 96px;
+}
+
+.profile-hire-card {
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hire-rate-header {
+  border-bottom: 1px solid var(--slate-100);
+  padding-bottom: 16px;
+}
+
+.hire-rate-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--slate-400);
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.hire-rate-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.hire-rate-price strong {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  letter-spacing: -0.02em;
+}
+
+.price-unit {
+  font-size: 0.95rem;
+  color: var(--slate-500);
+}
+
+.hire-availability-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avail-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--slate-600);
+}
+
+.avail-pill {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.pill-avail {
+  background: var(--success-bg);
+  color: var(--success);
+  border: 1px solid var(--success-border);
+}
+
+.pill-busy {
+  background: var(--warning-bg);
+  color: var(--warning);
+  border: 1px solid var(--warning-border);
+}
+
+.btn-primary-hire {
+  width: 100%;
+  padding: 14px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 14px var(--primary-glow);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary-hire:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px var(--primary-glow);
+}
+
+.hire-guarantee-box {
+  border-top: 1px solid var(--slate-100);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guarantee-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: var(--slate-600);
+  font-weight: 550;
+}
+
+.guarantee-icon {
+  font-size: 1rem;
+}
+
+/* Loading & Not Found */
+.profile-loading-card,
+.profile-not-found-card {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 60px 24px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate-200);
+  text-align: center;
+}
+
+.btn-back-talent {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .profile-layout-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-sidebar-col {
+    position: static;
+  }
+  .profile-header-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-name-row {
+    justify-content: center;
+  }
+  .profile-meta-tags {
+    justify-content: center;
+  }
+  .profile-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
